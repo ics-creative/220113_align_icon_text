@@ -1,0 +1,67 @@
+.button-accesibility {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s;
+  &-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    fill: #4B4B4B;
+    margin-right: 8px;
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: opacity 0.2s;
+    }
+    &::after {
+      opacity: 0;
+    }
+    &.reload {
+      margin-right: 0;
+      margin-left: 8px;
+      &::before {
+        background-image: url('../images/icon_reload.svg');
+      }
+      &::after {
+        background-image: url('../images/icon_reload_hover.svg');
+      }
+    }
+  }
+  &-text {
+    margin-bottom: 8px;
+  }
+  &-wrap {
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+  &:hover {
+    color: #0065ff;
+    background-color: #e4eaf3;
+    &-icon {
+      &::before {
+        opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
