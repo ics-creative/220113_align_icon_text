@@ -1,0 +1,23 @@
+.button-04 {
+  align-items: center;
+  padding: 16px;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  &-icon {
+    width: 16px;
+    height: 16px;
+    fill: #4b4b4b;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  &-wrap {
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+}

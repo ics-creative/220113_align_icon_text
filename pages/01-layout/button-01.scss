@@ -1,0 +1,23 @@
+.button-01 {
+  display: block;
+  width: 100%;
+  padding: 16px 16px 16px 40px;
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  overflow-wrap: break-word;
+  &.fav {
+    background-image: url("../../images/icon_star.svg");
+  }
+  &.message {
+    background-image: url("../../images/icon_mail.svg");
+  }
+  &.trash {
+    background-image: url("../../images/icon_trash_can.svg");
+  }
+}

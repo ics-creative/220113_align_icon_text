@@ -1,0 +1,58 @@
+.button-cssShape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  &-icon {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 8px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #4b4b4b;
+      transition: background 0.2s;
+    }
+    &::before {
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::after {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
+  &-wrap {
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+  &:hover {
+    color: #0065ff;
+    background-color: #e4eaf3;
+    .button-cssShape-icon {
+      &::before,
+      &::after {
+        background-color: #0065ff;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.button-02 {
+  display: block;
+  width: 100%;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  overflow-wrap: break-word;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.2s;
+  }
+  &::after {
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+    &::after {
+      opacity: 1;
+    }
+  }
+  &.fav {
+    &::before {
+      background-image: url("../../images/icon_star.svg");
+    }
+    &::after {
+      background-image: url("../../images/icon_star_hover.svg");
+    }
+  }
+  &.message {
+    &::before {
+      background-image: url("../../images/icon_mail.svg");
+    }
+    &::after {
+      background-image: url("../../images/icon_mail_hover.svg");
+    }
+  }
+  &.trash {
+    &::before {
+      background-image: url("../../images/icon_trash_can.svg");
+    }
+    &::after {
+      background-image: url("../../images/icon_trash_can_hover.svg");
+    }
+  }
+  &.reload {
+    padding: 16px 40px 16px 16px;
+    &::before,
+    &::after {
+      left: auto;
+      right: 16px;
+      background-image: url("../../images/icon_reload.svg");
+    }
+    &::after {
+      background-image: url("../../images/icon_reload_hover.svg");
+    }
+  }
+  &-wrap {
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+  &:hover {
+    color: #0065ff;
+    background-color: #e4eaf3;
+  }
+}

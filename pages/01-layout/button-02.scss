@@ -1,0 +1,38 @@
+.button-02 {
+  display: block;
+  width: 100%;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  overflow-wrap: break-word;
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &.fav::before {
+    background-image: url("../../images/icon_star.svg");
+  }
+  &.message::before {
+    background-image: url("../../images/icon_mail.svg");
+  }
+  &.trash::before {
+    background-image: url("../../images/icon_trash_can.svg");
+  }
+  &-wrap {
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+}

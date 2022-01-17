@@ -12,10 +12,10 @@
     position: relative;
     margin-right: 12px;
     &::before {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
-      background-image: url('../images/icon_reload.svg');
+      background-image: url("../../images/icon_reload.svg");
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;

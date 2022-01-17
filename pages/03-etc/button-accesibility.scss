@@ -1,24 +1,26 @@
 .button-accesibility {
-  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 16px;
   text-align: left;
   cursor: pointer;
   font-size: 14px;
   color: #333;
-  transition: all 0.2s;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
   &-icon {
     flex-shrink: 0;
     width: 16px;
     height: 16px;
-    fill: #4B4B4B;
-    margin-right: 8px;
+    fill: #4b4b4b;
+    margin-right: 0;
+    margin-left: 8px;
     position: relative;
     &::before,
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 100%;
@@ -29,19 +31,11 @@
       background-position: center;
       background-repeat: no-repeat;
       transition: opacity 0.2s;
+      background-image: url("../../images/icon_reload.svg");
     }
     &::after {
       opacity: 0;
-    }
-    &.reload {
-      margin-right: 0;
-      margin-left: 8px;
-      &::before {
-        background-image: url('../images/icon_reload.svg');
-      }
-      &::after {
-        background-image: url('../images/icon_reload_hover.svg');
-      }
+      background-image: url("../../images/icon_reload_hover.svg");
     }
   }
   &-text {
@@ -54,11 +48,10 @@
   &:hover {
     color: #0065ff;
     background-color: #e4eaf3;
-    &-icon {
+    .button-accesibility-icon {
       &::before {
         opacity: 0;
       }
-
       &::after {
         opacity: 1;
       }
