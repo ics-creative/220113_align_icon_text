@@ -7,6 +7,7 @@
   cursor: pointer;
   font-size: 14px;
   color: #333;
+  background-color: #fff;
   line-height: 1;
   transition-property: background-color, color;
   transition-duration: 0.2s;
@@ -76,19 +77,23 @@
       }
     }
   }
-  &:hover &-icon {
-    &::before {
-      opacity: 0;
-    }
-    &::after {
-      opacity: 1;
+  &:hover,
+  &:focus {
+    .button-03-icon {
+      &::before {
+        opacity: 0;
+      }
+      &::after {
+        opacity: 1;
+      }
     }
   }
   &-wrap {
     overflow-wrap: break-word;
     min-width: 0;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     color: #0065ff;
     background-color: #e4eaf3;
   }

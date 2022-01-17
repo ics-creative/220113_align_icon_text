@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "format": "prettier \"./pages/**/*.{scss,ts,js,html}\" --write"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.47.0",

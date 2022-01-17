@@ -4,6 +4,7 @@
   flex-shrink: 0;
   width: 100%;
   padding: 16px;
+  background-color: #fff;
   text-align: left;
   cursor: pointer;
   font-size: 14px;
@@ -34,11 +35,8 @@
     overflow-wrap: break-word;
     min-width: 0;
   }
-  &:hover {
-    color: #0065ff;
-    background-color: #e4eaf3;
-  }
-  &:hover {
+  &:hover,
+  &:focus {
     color: #0065ff;
     background-color: #e4eaf3;
     .button-04-icon {

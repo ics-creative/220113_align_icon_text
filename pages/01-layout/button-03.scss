@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: #fff;
   text-align: left;
   cursor: pointer;
   font-size: 14px;
@@ -38,7 +39,7 @@
       background-image: url("../../images/icon_trash_can.svg");
     }
   }
-  &-wrap {
+  &-text {
     overflow-wrap: break-word;
     min-width: 0;
   }

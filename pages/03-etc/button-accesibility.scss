@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 16px;
+  background-color: #fff;
   text-align: left;
   cursor: pointer;
   font-size: 14px;
@@ -39,13 +40,15 @@
     }
   }
   &-text {
-    margin-bottom: 8px;
+    display: inline-block;
+    margin-bottom: 4px;
   }
   &-wrap {
     overflow-wrap: break-word;
     min-width: 0;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     color: #0065ff;
     background-color: #e4eaf3;
     .button-accesibility-icon {
