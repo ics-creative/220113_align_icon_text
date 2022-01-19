@@ -42,10 +42,6 @@
       transform: translateX(-50%);
     }
   }
-  &-wrap {
-    overflow-wrap: break-word;
-    min-width: 0;
-  }
   &:hover,
   &:focus {
     color: #0065ff;

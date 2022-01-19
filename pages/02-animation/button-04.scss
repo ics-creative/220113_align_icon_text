@@ -12,13 +12,6 @@
   line-height: 1;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  &.reload {
-    justify-content: space-between;
-  }
-  &-wrap {
-    overflow-wrap: break-word;
-    min-width: 0;
-  }
   &-icon {
     width: 16px;
     height: 16px;
@@ -26,14 +19,11 @@
     margin-right: 8px;
     flex-shrink: 0;
     transition: fill 0.2s;
-    &.reload {
-      margin-right: 0;
-      margin-left: 8px;
-    }
   }
-  &-wrap {
+  &-text {
+    // 折り返しの対応
     overflow-wrap: break-word;
-    min-width: 0;
+    min-inline-size: 0;
   }
   &:hover,
   &:focus {

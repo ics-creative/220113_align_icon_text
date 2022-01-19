@@ -15,7 +15,6 @@
     flex-shrink: 0;
     width: 16px;
     height: 16px;
-    fill: #4b4b4b;
     margin-right: 0;
     margin-left: 8px;
     position: relative;
@@ -42,10 +41,6 @@
   &-text {
     display: inline-block;
     margin-bottom: 4px;
-  }
-  &-wrap {
-    overflow-wrap: break-word;
-    min-width: 0;
   }
   &:hover,
   &:focus {

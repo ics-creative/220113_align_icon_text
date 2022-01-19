@@ -13,7 +13,6 @@
     flex-shrink: 0;
     width: 16px;
     height: 16px;
-    fill: #4b4b4b;
     margin-right: 8px;
     position: relative;
     background-size: contain;
@@ -29,18 +28,19 @@
       background-position: center;
       background-repeat: no-repeat;
     }
-    &.fav {
+    &.fav::before {
       background-image: url("../../images/icon_star.svg");
     }
-    &.message {
+    &.message::before {
       background-image: url("../../images/icon_mail.svg");
     }
-    &.trash {
+    &.trash::before {
       background-image: url("../../images/icon_trash_can.svg");
     }
   }
   &-text {
+    // 折り返しの対応
     overflow-wrap: break-word;
-    min-width: 0;
+    min-inline-size: 0;
   }
 }

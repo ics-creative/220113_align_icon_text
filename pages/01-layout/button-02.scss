@@ -3,12 +3,13 @@
   width: 100%;
   padding: 16px 16px 16px 40px;
   position: relative;
-  background-color: #fff;
   text-align: left;
   cursor: pointer;
   font-size: 14px;
   color: #333;
+  background-color: #fff;
   line-height: 1;
+  // 折り返しの対応
   overflow-wrap: break-word;
   &::before {
     content: "";
@@ -19,7 +20,6 @@
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #fff;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,9 +32,5 @@
   }
   &.trash::before {
     background-image: url("../../images/icon_trash_can.svg");
-  }
-  &-wrap {
-    overflow-wrap: break-word;
-    min-width: 0;
   }
 }

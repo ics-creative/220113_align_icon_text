@@ -11,18 +11,10 @@
   line-height: 1;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  &.reload {
-    justify-content: space-between;
-  }
-  &-wrap {
-    overflow-wrap: break-word;
-    min-width: 0;
-  }
   &-icon {
     flex-shrink: 0;
     width: 16px;
     height: 16px;
-    fill: #4b4b4b;
     margin-right: 8px;
     position: relative;
     &::before,
@@ -66,19 +58,16 @@
         background-image: url("../../images/icon_trash_can_hover.svg");
       }
     }
-    &.reload {
-      margin-right: 0;
-      margin-left: 8px;
-      &::before {
-        background-image: url("../../images/icon_reload.svg");
-      }
-      &::after {
-        background-image: url("../../images/icon_reload_hover.svg");
-      }
-    }
+  }
+  &-text {
+    // 折り返しの対応
+    overflow-wrap: break-word;
+    min-inline-size: 0;
   }
   &:hover,
   &:focus {
+    color: #0065ff;
+    background-color: #e4eaf3;
     .button-03-icon {
       &::before {
         opacity: 0;
@@ -87,14 +76,5 @@
         opacity: 1;
       }
     }
-  }
-  &-wrap {
-    overflow-wrap: break-word;
-    min-width: 0;
-  }
-  &:hover,
-  &:focus {
-    color: #0065ff;
-    background-color: #e4eaf3;
   }
 }
