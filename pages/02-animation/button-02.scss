@@ -8,7 +8,7 @@
   font-size: 14px;
   color: #333;
   background-color: #fff;
-  line-height: 1;
+  line-height: 1.3;
   overflow-wrap: break-word;
   transition-property: background-color, color;
   transition-duration: 0.2s;
@@ -57,7 +57,7 @@
   &-text {
     // 折り返しの対応
     overflow-wrap: break-word;
-    min-inline-size: 0;
+    min-width: 0;
   }
   &:hover,
   &:focus {

@@ -41,6 +41,6 @@
   &-text {
     // 折り返しの対応
     overflow-wrap: break-word;
-    min-inline-size: 0;
+    min-width: 0;
   }
 }
