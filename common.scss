@@ -1,6 +1,9 @@
 /**
  * reset
  */
+* {
+  box-sizing: border-box;
+}
 body {
   background: #e5e5e5;
   color: #333;
@@ -13,18 +16,15 @@ body {
     background: #7ca9bd;
   }
 }
+a {
+  text-decoration: none;
+}
 ul {
   padding: 0;
   margin: 0;
   li {
     list-style-type: none;
   }
-}
-button {
-  background: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
 }
 h1 {
   text-align: center;
@@ -46,9 +46,11 @@ h2 {
 .account {
   width: 100%;
   max-width: 414px;
-  margin: 0 auto 48px;
+  margin: 0 auto 60px;
   line-height: 1.5;
   font-size: 14px;
+  box-shadow: 0px 24px 48px rgb(0 0 0 / 16%);
+  border-radius: 8px;
 }
 
 .user {
@@ -89,7 +91,7 @@ h2 {
     margin-bottom: 1px;
     &:last-child {
       margin-bottom: 0;
-      button {
+      a {
         border-radius: 0 0 8px 8px;
       }
     }
