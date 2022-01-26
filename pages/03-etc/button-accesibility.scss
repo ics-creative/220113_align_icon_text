@@ -8,6 +8,7 @@
   transition-property: background-color, color;
   transition-duration: 0.2s;
   &-icon {
+    // アイコンの縮小を防ぐ
     flex-shrink: 0;
     width: 16px;
     height: 16px;

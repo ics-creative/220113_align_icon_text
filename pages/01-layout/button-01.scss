@@ -1,11 +1,13 @@
 .button-01 {
   display: block;
   width: 100%;
+  // アイコンのスペースを確保したpadding-leftを設定する
   padding: 16px 16px 16px 40px;
   background-color: #fff;
+  // 左から16pxの上下中央に背景画像を配置
   background-position: left 16px center;
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 16px 16px;
   // 折り返しの対応
   overflow-wrap: break-word;
   &.fav {
