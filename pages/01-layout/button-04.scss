@@ -6,6 +6,8 @@
   width: 100%;
   padding: 16px;
   background-color: #fff;
+  // 折り返しの対応
+  overflow-wrap: break-word;
   &-icon {
     // アイコンの縮小を防ぐ
     flex-shrink: 0;
@@ -15,8 +17,6 @@
     margin-right: 8px;
   }
   &-text {
-    // 折り返しの対応
-    overflow-wrap: break-word;
     // 横幅の可変を維持した折り返しを行う
     min-width: 0;
   }

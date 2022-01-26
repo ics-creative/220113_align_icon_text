@@ -8,6 +8,8 @@
   overflow-wrap: break-word;
   transition-property: background-color, color;
   transition-duration: 0.2s;
+  // 折り返しの対応
+  overflow-wrap: break-word;
   &::before,
   &::after {
     content: "";
@@ -52,8 +54,7 @@
     }
   }
   &-text {
-    // 折り返しの対応
-    overflow-wrap: break-word;
+    // 横幅の可変を維持した折り返しを行う
     min-width: 0;
   }
   &:hover,
