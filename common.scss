@@ -9,15 +9,13 @@ body {
   color: #333;
   padding-bottom: 80px;
   font-family: sans-serif;
+  text-align: left;
   &.page-animation {
     background: #b6d0db;
   }
   &.page-etc {
     background: #7ca9bd;
   }
-}
-a {
-  text-decoration: none;
 }
 ul {
   padding: 0;
@@ -33,8 +31,18 @@ h1 {
 h2 {
   text-align: center;
 }
+a,
+button {
+  font-size: 14px;
+  line-height: 1.3;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
 button {
   border: 0;
+  cursor: pointer;
 }
 
 /**
@@ -105,4 +113,5 @@ button {
 .footLink {
   text-align: center;
   font-size: 17px;
+  text-decoration: underline;
 }
