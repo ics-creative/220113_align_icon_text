@@ -1,4 +1,4 @@
-.button-accesibility {
+.button-accessibility {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +46,7 @@
   &:focus {
     color: #0065ff;
     background-color: #e4eaf3;
-    .button-accesibility-icon {
+    .button-accessibility-icon {
       &::before {
         opacity: 0;
       }
