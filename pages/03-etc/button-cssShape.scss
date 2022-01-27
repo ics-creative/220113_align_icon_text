@@ -18,6 +18,7 @@
     margin-right: 1px;
     margin-left: 8px;
     position: relative;
+    transition: transform 0.2s;
     // 疑似要素でプラスのアイコンを作成
     &::before,
     &::after {
@@ -51,7 +52,10 @@
     color: #0065ff;
     background-color: #e4eaf3;
     .button-cssShape-icon {
-      &::before,
+      transform: rotate(90deg);
+      &::before {
+        opacity: 0;
+      }
       &::after {
         background-color: #0065ff;
       }
