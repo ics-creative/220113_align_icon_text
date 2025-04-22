@@ -1,23 +1,23 @@
 .button-04 {
   display: flex;
   align-items: center;
-  // アイコンの縮小を防ぐ
+  /* アイコンの縮小を防ぐ */
   flex-shrink: 0;
   width: 100%;
   padding: 16px;
   background-color: #fff;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
-  &-icon {
-    // アイコンの縮小を防ぐ
+  .button-04-icon {
+    /* アイコンの縮小を防ぐ */
     flex-shrink: 0;
     width: 16px;
     height: 16px;
     fill: #4b4b4b;
     margin-right: 8px;
   }
-  &-text {
-    // 横幅の可変を維持した折り返しを行う
+  .button-04-text {
+    /* 横幅の可変を維持した折り返しを行う */
     min-width: 0;
   }
 }

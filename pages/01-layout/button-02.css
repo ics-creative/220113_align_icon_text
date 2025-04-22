@@ -1,11 +1,11 @@
 .button-02 {
   display: block;
   width: 100%;
-  // アイコンのスペースを確保したpadding-leftを設定する
+  /* アイコンのスペースを確保したpadding-leftを設定する */
   padding: 16px 16px 16px 40px;
   position: relative;
   background-color: #fff;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
   &::before {
     content: "";
@@ -14,7 +14,7 @@
     height: 16px;
     position: absolute;
     left: 16px;
-    // top: 50%;と、transform: translateY(-50%) で上下中央に配置
+    /* top: 50%;と、transform: translateY(-50%) で上下中央に配置 */
     top: 50%;
     transform: translateY(-50%);
     background-size: contain;

@@ -7,10 +7,10 @@
   background-color: #fff;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
-  &-icon {
-    // アイコンの縮小を防ぐ
+  .button-cssShape-icon {
+    /* アイコンの縮小を防ぐ */
     flex-shrink: 0;
     width: 14px;
     height: 14px;
@@ -19,7 +19,7 @@
     margin-left: 8px;
     position: relative;
     transition: transform 0.2s;
-    // 疑似要素でプラスのアイコンを作成
+    /* 疑似要素でプラスのアイコンを作成 */
     &::before,
     &::after {
       content: "";
@@ -43,8 +43,8 @@
       transform: translateX(-50%);
     }
   }
-  &-text {
-    // 横幅の可変を維持した折り返しを行う
+  .button-cssShape-text {
+    /* 横幅の可変を維持した折り返しを行う */
     min-width: 0;
   }
   &:hover,

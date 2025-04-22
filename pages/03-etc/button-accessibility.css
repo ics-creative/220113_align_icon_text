@@ -7,10 +7,10 @@
   background-color: #fff;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
-  &-icon {
-    // アイコンの縮小を防ぐ
+  .button-accessibility-icon {
+    /* アイコンの縮小を防ぐ */
     flex-shrink: 0;
     width: 16px;
     height: 16px;
@@ -37,9 +37,9 @@
       background-image: url("../../images/icon_reload_hover.svg");
     }
   }
-  &-text {
+  .button-accessibility-text {
     margin-bottom: 4px;
-    // 横幅の可変を維持した折り返しを行う
+    /* 横幅の可変を維持した折り返しを行う */
     min-width: 0;
   }
   &:hover,

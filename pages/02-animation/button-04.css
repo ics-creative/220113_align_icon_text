@@ -6,10 +6,10 @@
   background-color: #fff;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
-  &-icon {
-    // アイコンの縮小を防ぐ
+  .button-04-icon {
+    /* アイコンの縮小を防ぐ */
     flex-shrink: 0;
     width: 16px;
     height: 16px;
@@ -17,8 +17,8 @@
     margin-right: 8px;
     transition: fill 0.2s;
   }
-  &-text {
-    // 横幅の可変を維持した折り返しを行う
+  .button-04-text {
+    /* 横幅の可変を維持した折り返しを行う */
     min-width: 0;
   }
   &:hover,

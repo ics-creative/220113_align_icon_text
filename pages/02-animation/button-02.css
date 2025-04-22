@@ -1,14 +1,14 @@
 .button-02 {
   display: block;
   width: 100%;
-  // アイコンのスペースを確保したpadding-leftを設定する
+  /* アイコンのスペースを確保したpadding-leftを設定する */
   padding: 16px 16px 16px 40px;
   position: relative;
   background-color: #fff;
   overflow-wrap: break-word;
   transition-property: background-color, color;
   transition-duration: 0.2s;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
   &::before,
   &::after {
@@ -18,7 +18,7 @@
     height: 16px;
     position: absolute;
     left: 16px;
-    // top: 50%;と、transform: translateY(-50%) で上下中央に配置
+    /* top: 50%;と、transform: translateY(-50%) で上下中央に配置 */
     top: 50%;
     transform: translateY(-50%);
     background-size: contain;
@@ -53,8 +53,8 @@
       background-image: url("../../images/icon_trash_can_hover.svg");
     }
   }
-  &-text {
-    // 横幅の可変を維持した折り返しを行う
+  .button-02-text {
+    /* 横幅の可変を維持した折り返しを行う */
     min-width: 0;
   }
   &:hover,

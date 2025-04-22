@@ -7,7 +7,7 @@
   overflow-wrap: break-word;
   min-width: 0;
   line-height: 1;
-  &-icon {
+  .buttonInfo-icon {
     width: 13px;
     height: 13px;
     position: relative;

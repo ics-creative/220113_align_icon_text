@@ -4,10 +4,10 @@
   align-items: center;
   width: 100%;
   background-color: #fff;
-  // 折り返しの対応
+  /* 折り返しの対応 */
   overflow-wrap: break-word;
-  &-icon {
-    // アイコンの縮小を防ぐ
+  .button-03-icon {
+    /* アイコンの縮小を防ぐ */
     flex-shrink: 0;
     width: 16px;
     height: 16px;
@@ -36,8 +36,8 @@
       background-image: url("../../images/icon_trash_can.svg");
     }
   }
-  &-text {
-    // 横幅の可変を維持した折り返しを行う
+  .button-03-text {
+    /* 横幅の可変を維持した折り返しを行う */
     min-width: 0;
   }
 }
